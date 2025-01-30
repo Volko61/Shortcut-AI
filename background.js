@@ -20,19 +20,3 @@ function openChatWindow() {
     });
 }
 
-// Function to interact with OpenAI compatible API
-async function fetchAIResponse(prompt) {
-    const response = await fetch("https://groq.volko.org/v1/chat/completions", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": "Bearer dazd3jiojjoi4dzad978DF9D8ZDAdz"
-        },
-        body: JSON.stringify({
-            model: "gemini-exp-2.0",
-            prompt: prompt,
-            max_tokens: 100
-        })
-    });
-    return response.json();
-}
