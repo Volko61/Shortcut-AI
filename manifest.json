@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "AI Chat Extension",
+    "version": "1.0",
+    "description": "Easily talk with an AI",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        }
+    },
+    "commands": {
+        "open_chat": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y"
+            },
+            "description": "Open a chat windows"
+        }
+    }
+}
